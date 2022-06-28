@@ -16,9 +16,16 @@
     <div id="mydiv"></div>
 
     <script type="text/babel">
+        
+        // creating a button component
+        const bla=()=>alert("test")
+        function Test(){
+            return <button onClick={bla}>Click me</button>
+        }
+
         class Hello extends React.Component{
             render(){
-                return <div>Hello react with code</div>
+                return <div>Hello react with code <Test /></div>
             }
         }
         // to connect with render function
